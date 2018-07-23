@@ -17,6 +17,3 @@ function deleteFromDriverByKey(driver, key){
   return newDriver;
 }
 
-updateDriverWithKeyAndValue(driver, "name", "sam")
-updateDriverWithKeyAndValue(driver, "address", "11 broadway")
-updateDriverWithKeyAndValue(driver, "height", 500)

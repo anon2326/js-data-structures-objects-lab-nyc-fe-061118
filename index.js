@@ -1,8 +1,8 @@
 // Write your solution in this file!
-const driver = {name: 'Sam'};
+const driver = {};
 function updateDriverWithKeyAndValue(driver, key, value){
-  const newDriver = Object.assign({name:'Sam'}, driver);
-  newDriver.address = '11 Broadway';
+  const newDriver = {...driver()};
+  newDriver.[key] = value;
   return newDriver;
 }
 
@@ -16,3 +16,7 @@ function deleteFromDriverByKey(driver, key){
   delete newDriver['address'];
   return newDriver;
 }
+
+updateDriverWithKeyAndValue(driver, "name", "sam")
+updateDriverWithKeyAndValue(driver, "address", "11 broadway")
+updateDriverWithKeyAndValue(driver, "height", 500)
